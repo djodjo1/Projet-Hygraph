@@ -40,8 +40,8 @@
 
         <template #links>
           <LinksNavLink to="/">Accueil</LinksNavLink>
-          <LinksNavLink to="/services">Services</LinksNavLink>
-          <LinksNavLink to="/entreprise">Entreprise</LinksNavLink>
+              <LinksNavLink to="/entreprise">Entreprise</LinksNavLink>
+              <LinksNavLink to="/services">Services</LinksNavLink>
           <LinksNavLink to="/equipe">Équipe</LinksNavLink>
           <LinksNavLink to="/blogactualite">Blog</LinksNavLink>
           <LinksNavLink to="/contact">Contact</LinksNavLink>
