@@ -15,6 +15,7 @@
     />
     <Meta
       property="og:url"
+      content="https://projet-hygraph.vercel.app/"
       
     />
     <Meta property="og:type" content="website" />
