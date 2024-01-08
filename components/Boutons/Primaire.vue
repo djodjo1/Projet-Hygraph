@@ -21,7 +21,7 @@
 </style>
 
 <template>
-  <button type="button" class="font-sans text-black bg-white focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-8 py-5 text-center inline-flex items-center  dark:focus:ring-amber-800 
+  <button type="button" class="font-sans text-white bg-black focus:ring-4 focus:outline-none focus:ring-amber-300 font-medium rounded-lg text-sm px-8 py-5 text-center inline-flex items-center  dark:focus:ring-amber-800 
   hover:bg-gradient-to-r from-pink-500 via-red-500 to-yellow-500 background-animate hover:text-white transition ease-in-out">
     
 
