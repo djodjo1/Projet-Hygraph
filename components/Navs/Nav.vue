@@ -3,7 +3,7 @@ const isOpen = ref(false);
 </script>
 
 <template>
-  <nav class="fixed top-0 w-full bg-white border-gray-200 dark:bg-transparent z-10 px-10">
+  <nav class="fixed top-0 w-full bg-gray-200 border-gray-200 dark:bg-transparent z-10 px-10 transition-all duration-300">
     <div class="flex items-center justify-between flex-wrap h-20 px-4">
       <div>
         <nuxt-link to="/">
@@ -11,7 +11,7 @@ const isOpen = ref(false);
         </nuxt-link>
       </div>
       <div>
-        <ul class="hidden md:flex items-center justify-between space-x-8">
+        <ul class="hidden md:flex items-center justify-between space-x-8 flex-grow">
           <slot name="links"></slot>
         </ul>
         <ul>
@@ -24,13 +24,13 @@ const isOpen = ref(false);
         </ul>
       </div>
     </div>
-<div class="overflow-clip">
-    <transition name="slide-background" >
-      <ul v-show="isOpen" class="md:hidden flex flex-col space-y-2 px-4 py-8 bg-gray-200 rounded-lg">
-        <slot name="links"></slot>
-      </ul>
-    </transition>
-  </div>
+    <div class="overflow-clip">
+      <transition name="slide-background" >
+        <ul v-show="isOpen" class="md:hidden flex flex-col space-y-2 px-4 py-8 bg-gray-200 rounded-lg">
+          <slot name="links"></slot>
+        </ul>
+      </transition>
+    </div>
   </nav>
 </template>
 
@@ -38,10 +38,17 @@ const isOpen = ref(false);
 .slide-background-enter-active, .slide-background-leave-active {
   height: 100%;
   transition: all 0.3s ease-in-out;
-
 }
 .slide-background-enter, .slide-background-leave-to {
   opacity: 1;
   transform: translateY(-100%);
+}
+
+nav:hover {
+  background-color: gray;
+}
+
+nav.clicked {
+  background-color: black;
 }
 </style>
